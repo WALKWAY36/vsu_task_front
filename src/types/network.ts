@@ -16,7 +16,7 @@ type FuzzyMatchedLocations = FuzzyMatched;
 
 interface Entities {
   persons: EntitiesPersons;
-  locatons: EntitesLocations;
+  locations: EntitesLocations;
 }
 
 interface Fuzzy {
@@ -31,7 +31,7 @@ interface AnalyzeTextRequest {
 interface AnalyzeTextSuccessResponse {
   language: Language;
   entities: Entities;
-  fuzzy_matches: Fuzzy;
+  fuzzy_matched: Fuzzy;
 }
 
 interface AnalyzeTextErrorResponse {
