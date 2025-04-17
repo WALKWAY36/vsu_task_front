@@ -6,9 +6,9 @@ const initialState: Slice.AnalyzeTextSliceData = {
     language: 'undefined',
     entities: {
       persons: [],
-      locatons: [],
+      locations: [],
     },
-    fuzzy_matches: {
+    fuzzy_matched: {
       persons: [],
       locations: [],
     },
