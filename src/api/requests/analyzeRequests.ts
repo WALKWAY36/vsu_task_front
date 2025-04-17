@@ -12,7 +12,8 @@ const fetchAnalyzeText = (text: string): AppThunk => {
   return async (dispatch) => {
     dispatch(analyzeTextStart());
     try {
-      const response = await axiosInstance.post<Network.AnalyzeTextSuccessResponse>('/analyze_text', text);
+      const requestBody = { text };
+      const response = await axiosInstance.post<Network.AnalyzeTextSuccessResponse>('/analyze_text', requestBody);
       dispatch(analyzeTextSuccess(response.data));
     } catch (error: any) {
       dispatch(
