@@ -13,3 +13,9 @@ body {
 footer {
   margin-top: auto;
 }
+@font-face {
+  font-family: 'Bounded';
+  src: url('/fonts/Bounded-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
